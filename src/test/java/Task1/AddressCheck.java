@@ -32,7 +32,7 @@ public class AddressCheck {
     }
     public void addressCheck (String alias, String address, String city, String postcode, String country, String phone) {
         updateAddress.click();
-        System.out.println(aliasInput.getAttribute("value"));
+        System.out.println(countryId.getAttribute("value"));
 
          if (Objects.equals(aliasInput.getAttribute("value"), alias)) {
              System.out.println("Alias is correct");
@@ -58,7 +58,7 @@ public class AddressCheck {
              System.out.println("Wrong data");
          }
          countryId.getText();
-         if (Objects.equals(countryId.getAttribute("selected"), country)) {
+         if (Objects.equals(countryId.getAttribute("value"), "17")) {
              System.out.println("Country is correct");
          } else {
              System.out.println("Wrong data");
