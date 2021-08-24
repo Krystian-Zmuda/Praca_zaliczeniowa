@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class TaskSteps2 {
     private WebDriver driver;
 
-    @Given("User is on SignIn page2")
+    @Given("User is on login page")
     public void setup2() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
@@ -25,7 +25,7 @@ public class TaskSteps2 {
 
     }
 
-    @When("User logs in with email and password2")
+    @When("User logs in using email and password")
     public void signInTest2() {
         LogIn logInTest = new LogIn(driver);
         logInTest.signIn("test.email123@gmail.com", "abcd123");

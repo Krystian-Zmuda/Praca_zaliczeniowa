@@ -1,8 +1,8 @@
 Feature: Task 2 test
 
   Scenario: User can order a Hummingbird Printed Sweater
-    Given User is on SignIn page2
-    When User logs in with email and password2
+    Given User is on login page
+    When User logs in using email and password
     And User goes to main page
     And User chooses a Hummingbird Printed Sweater
     And User chooses the M size
